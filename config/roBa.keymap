@@ -126,21 +126,21 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &to_layer_0 W       &to_layer_0 E  &to_layer_0 LC(TAB)      &trans                        &trans  &trans    &trans        &trans     &trans
-&kp HOME        &kp LC(LEFT_ARROW)  &kp PAGE_UP    &kp LC(RIGHT_ARROW)      &kp HOME  &trans      &trans  &trans  &mkp MB1  &kp UP_ARROW  &mkp MB2   &mkp MB3
-&kp LEFT_SHIFT  &kp LG(LA(LEFT))    &kp PAGE_DOWN  &kp LG(LA(RIGHT_ARROW))  &kp END   &trans      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LC(UP_ARROW)
-&trans          &trans              &trans         &trans                   &trans    &trans      &trans  &trans                                     &trans
+&kp ESCAPE      &to_layer_0 W       &to_layer_0 E  &to_layer_0 LC(TAB)      &trans                        &trans     &trans    &trans        &trans     &trans
+&kp HOME        &kp LC(LEFT_ARROW)  &kp PAGE_UP    &kp LC(RIGHT_ARROW)      &kp HOME  &trans      &trans  &kp LG(C)  &mkp MB1  &kp UP_ARROW  &mkp MB2   &mkp MB3
+&kp LEFT_SHIFT  &kp LG(LA(LEFT))    &kp PAGE_DOWN  &kp LG(LA(RIGHT_ARROW))  &kp END   &trans      &trans  &kp LG(V)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LC(UP_ARROW)
+&trans          &trans              &trans         &trans                   &trans    &trans      &trans  &trans                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
