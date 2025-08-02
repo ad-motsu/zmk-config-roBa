@@ -44,14 +44,19 @@
             key-positions = <11 10>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        LeftClick {
+            bindings = <&mkp MB2>;
+            key-positions = <20 19>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        RightClick {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 0>;
         };
     };
 
@@ -80,10 +85,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E         &kp R                &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                &kp G        &kp ESCAPE            &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                &kp B        &kp DELETE            &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCMD LANGUAGE_2  &lt 3 SPACE  &lt 5 LANGUAGE_1      &kp BACKSPACE  &lt 2 ENTER                             &kp RC(TAB)
+&lt 6 Q           &kp W         &kp E         &kp R                &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                &kp G        &kp ESCAPE            &kp MINUS       &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                &kp B        &kp DELETE            &kp LEFT_SHIFT  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCMD LANGUAGE_2  &lt 3 SPACE  &lt 5 LANGUAGE_1      &kp BACKSPACE   &lt 2 ENTER                             &kp RC(TAB)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
