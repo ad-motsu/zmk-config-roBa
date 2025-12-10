@@ -166,9 +166,9 @@
 
         NUM_win {
             bindings = <
-&kp SLASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                                       &kp BSLH    &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &kp DOLLAR
+&kp SLASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                                       &kp JP_YEN    &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &kp DOLLAR
 &kp SQT         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LANG_ZENKAKUHANKAKU      &trans  &kp GRAVE   &kp PERCENT      &kp CARET          &kp DOUBLE_QUOTES  &kp RS(COLON)
-&kp UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)      &kp LA(PRINTSCREEN)          &trans  &kp LS(N8)  &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH      &kp SINGLE_QUOTE
+&kp JP_UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)      &kp LA(PRINTSCREEN)          &trans  &kp LS(N8)  &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH      &kp SINGLE_QUOTE
 &trans          &kp KP_N0        &kp PERIOD       &kp LS(MINUS)    &trans             &trans                       &trans  &trans                                                             &trans
             >;
         };
