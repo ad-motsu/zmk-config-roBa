@@ -5,6 +5,9 @@
 
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
 
+#define JP_YEN          0x89
+#define JP_UNDERSCORE   LS(0x87) 
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
