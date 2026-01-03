@@ -100,7 +100,7 @@
 &kp TAB           &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LCMD LANGUAGE_2  &lt 2 SPACE  &lt 8 LANGUAGE_1      &kp BACKSPACE     &lt 3 ENTER                             &mt LCTRL DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         default_layer_win {
