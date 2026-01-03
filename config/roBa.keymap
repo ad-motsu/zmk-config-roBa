@@ -83,7 +83,9 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -109,8 +111,6 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp LS(LG(S))         &kp SINGLE_QUOTE  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LANGUAGE_2  &lt 6 SPACE  &lt 8 LANGUAGE_1      &kp BACKSPACE     &lt 7 ENTER                             &mt LCTRL DELETE
             >;
-
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         ARROW {
@@ -121,7 +121,7 @@
 &trans  &trans              &trans         &trans                   &trans    &trans      &trans   &trans                                        &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         NUM {
@@ -132,7 +132,7 @@
 &trans          &kp KP_N0        &kp PERIOD       &kp EQUAL        &trans        &trans                    &trans  &trans                                                                            &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         FUNCTION {
@@ -160,8 +160,6 @@
 &trans  &kp LG(LEFT)            &kp PAGE_DOWN  &kp LG(RIGHT_ARROW)      &kp END   &trans      &kp F12  &kp LC(V)  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
 &trans  &trans                  &trans         &trans                   &trans    &trans      &trans   &trans                                        &trans
             >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM_win {
