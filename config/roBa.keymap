@@ -132,6 +132,8 @@
 &kp UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp LG(LS(NUMBER_4))      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
 &trans          &kp KP_N0        &kp PERIOD       &kp EQUAL        &trans        &trans                    &trans  &trans                                                                            &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
