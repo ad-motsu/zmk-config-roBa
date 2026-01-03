@@ -66,6 +66,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        change_windows_jp: change_windows_jp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &tog 1>;
+            label = "CHANGE_WINDOWS_JP";
+        };
     };
 
     behaviors {
@@ -111,6 +118,8 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp LS(LG(S))         &kp SINGLE_QUOTE  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LANGUAGE_2  &lt 6 SPACE  &lt 8 LANGUAGE_1      &kp BACKSPACE     &lt 7 ENTER                             &mt LCTRL DELETE
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -175,7 +184,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &to 0         &tog 1        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &to 0         &tog 1        &trans        &trans        &change_windows_jp
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &bt BT_CLR
             >;
         };
