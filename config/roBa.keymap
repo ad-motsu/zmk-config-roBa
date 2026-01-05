@@ -121,10 +121,10 @@
 
         default_layer_win_jp {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                 &kp T                                                 &kp Y        &kp U  &lt 11 I   &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                 &kp G        &kp ESCAPE             &kp SEMICOLON     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_ALT MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp LS(LG(S))          &kp SINGLE_QUOTE  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LANGUAGE_2  &lt 7 SPACE  &lt 11 LANGUAGE_1      &kp BACKSPACE     &lt 8 ENTER                             &mt LCTRL DELETE
+&kp Q             &kp W         &kp E         &kp R                 &kp T                                              &kp Y        &kp U  &lt 11 I   &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                 &kp G        &kp ESCAPE             &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &mt RIGHT_ALT MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp LS(LG(S))          &kp AMPERSAND  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp TAB           &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LANGUAGE_2  &lt 7 SPACE  &lt 11 LANGUAGE_1      &kp BACKSPACE  &lt 8 ENTER                             &mt LCTRL DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -194,10 +194,10 @@
 
         NUM_win_jp {
             bindings = <
-&kp SLASH          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                                       &kp JP_YEN  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &kp DOLLAR
-&kp SQT            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LANG_ZENKAKUHANKAKU      &trans  &kp JP_TILDE   &kp PERCENT      &kp CARET          &kp DOUBLE_QUOTES  &kp RS(COLON)
-&kp JP_UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)      &kp LA(PRINTSCREEN)          &trans  &kp LS(N8)  &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH      &kp SINGLE_QUOTE
-&trans             &kp KP_N0        &kp PERIOD       &kp LS(MINUS)    &trans             &trans                       &trans  &trans                                                             &trans
+&kp SLASH          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES                                       &kp JP_YEN    &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
+&kp SQT            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LANG_ZENKAKUHANKAKU      &trans  &kp JP_TILDE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp DOUBLE_QUOTES
+&kp JP_UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(COLON)      &kp LA(PRINTSCREEN)          &kp AT  &kp LS(N8)    &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AMPERSAND
+&trans             &kp KP_N0        &kp PERIOD       &kp LS(MINUS)    &trans             &trans                       &trans  &trans                                                           &trans
             >;
         };
 
