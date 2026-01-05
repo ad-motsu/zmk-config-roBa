@@ -73,6 +73,13 @@
             bindings = <&bt BT_SEL 4 &tog 1>;
             label = "CHANGE_WINDOWS_JP";
         };
+
+        change_mac: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -183,8 +190,8 @@
         SCROLL_BT {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &to 0         &tog 1        &trans        &trans        &change_windows_jp
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &change_mac   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &change_windows_jp
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 0  &trans        &trans        &trans        &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &bt BT_CLR
             >;
         };
