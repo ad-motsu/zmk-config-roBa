@@ -114,7 +114,7 @@
         userpd: userpd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RS(Y) &kp M &kp A &kp M &kp O &kp NUMBER_2 &kp N0 &kp NUMBER_3 &kp NUMBER_3>;
+            bindings = <&kp LEFT_BRACKET &kp RS(Y) &kp A &kp M &kp A &kp M &kp O &kp NUMBER_2 &kp N0 &kp NUMBER_3 &kp NUMBER_3>;
             label = "USERPD";
         };
     };
