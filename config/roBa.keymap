@@ -3,19 +3,27 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define MOUSE 4
-#define SCROLL 5
-#define NUM 6
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
-&mkp_input_listener {
-    // マウスキーを押したらAMLを500ms延長
+&trackball {
+    automouse-layer = <4>;
+    scroll-layers = <5>;
 
-    input-processors = <&zip_temp_layer 6 500>;
+    // arrows {
+    //     layers = <3>;
+    //     bindings =
+    //         <&kp RIGHT_ARROW>,
+    //         <&kp LEFT_ARROW>,
+    //         <&kp UP_ARROW>,
+    //         <&kp DOWN_ARROW>;
+
+    //     tick = <10>;
+    //     wait-ms = <5>;
+    //     tap-ms = <5>;
+    // };
 };
 
 / {
@@ -79,7 +87,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>, <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
