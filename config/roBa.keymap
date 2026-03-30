@@ -14,6 +14,7 @@
 
 &mkp_input_listener {
     // マウスキーを押したらAMLを500ms延長
+
     input-processors = <&zip_temp_layer 6 500>;
 };
 
@@ -78,7 +79,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>, <&inc_dec_kp 0 0>;
         };
 
         FUNCTION {
