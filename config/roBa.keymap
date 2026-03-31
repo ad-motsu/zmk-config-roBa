@@ -19,7 +19,7 @@
 
 &trackball {
     scroll-layers = <11>;
-    input-processors = <&zip_temp_layer 6 10000>;
+    automouse-layer = <6>;
 
     // arrows {
     //     layers = <3>;
