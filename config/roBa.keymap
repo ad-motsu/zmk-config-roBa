@@ -15,13 +15,11 @@
     quick-tap-ms = <0>;
 };
 
-&trackball_listener {
-    input-processors = <&zip_temp_layer 5 10000>;
-};
 
 
 &trackball {
     scroll-layers = <11>;
+    input-processors = <&zip_temp_layer 6 10000>;
 
     // arrows {
     //     layers = <3>;
