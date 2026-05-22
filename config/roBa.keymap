@@ -204,7 +204,7 @@
 &trans          &kp KP_N0        &kp PERIOD       &kp EQUAL        &trans        &trans                    &trans  &trans                                                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         FUNCTION {
@@ -244,7 +244,7 @@
 &trans             &kp N0        &kp PERIOD    &kp LS(MINUS)  &trans             &trans                   &trans    &trans                                                               &kp AT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
         };
 
         ARROW_win_en {
@@ -266,7 +266,7 @@
 &trans          &kp KP_N0        &kp PERIOD       &kp EQUAL        &trans        &trans                   &trans  &trans                                                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         SCROLL_BT {
