@@ -33,6 +33,13 @@
 };
 
 / {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_temp_layer 6 500>; // 6がAMLレイヤー、500が戻る時間（0.5秒）
+    };
+
+/ {
     combos {
         compatible = "zmk,combos";
 
