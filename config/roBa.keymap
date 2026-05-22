@@ -18,6 +18,8 @@
 &trackball {
     scroll-layers = <11>;
     automouse-layer = <6>;
+    delay-ms = <0>;
+    timeout-ms = <500>;
 
     // arrows {
     //     layers = <3>;
