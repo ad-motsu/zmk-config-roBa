@@ -240,7 +240,7 @@
             bindings = <
 &kp SLASH         &kp N7        &kp N8        &kp N9         &kp DOUBLE_QUOTES                                     &kp JP_YEN        &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
 &kp SQT           &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp MINUS          &kp LANGUAGE_5           &kp PLUS  &kp JP_BACKQUOTE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SEMICOLON
-&mt LEFT_SHIFT A  &kp N1        &kp NUMBER_2  &kp NUMBER_3   &kp RS(COLON)      &kp LA(PRINTSCREEN)      &kp AT    &kp LS(N8)        &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AMPERSAND
+&mt LEFT_SHIFT JP_UNDERSCORE  &kp N1        &kp NUMBER_2  &kp NUMBER_3   &kp RS(COLON)      &kp LA(PRINTSCREEN)      &kp AT    &kp LS(N8)        &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AMPERSAND
 &trans            &kp N0        &kp PERIOD    &kp LS(MINUS)  &trans             &trans                   &trans    &trans                                                               &kp AT
             >;
 
