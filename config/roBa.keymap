@@ -68,6 +68,12 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
         };
+
+        at_mark {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -192,10 +198,10 @@
 
         NUM {
             bindings = <
-&kp SLASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK                                    &kp BSLH              &kp EXCLAMATION        &kp AT_SIGN       &kp HASH           &kp DOLLAR
-&kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS     &kp CAPSLOCK              &trans  &kp GRAVE             &kp PERCENT            &kp CARET         &kp AMPERSAND      &kp ASTERISK
-&kp UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp LG(LS(NUMBER_4))      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
-&trans          &kp KP_N0        &kp PERIOD       &kp EQUAL        &trans        &trans                    &trans  &trans                                                                            &trans
+&kp SLASH                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK                                    &kp BSLH              &kp EXCLAMATION        &kp AT_SIGN       &kp HASH           &kp DOLLAR
+&kp COLON                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS     &kp CAPSLOCK              &trans  &kp GRAVE             &kp PERCENT            &kp CARET         &kp AMPERSAND      &kp ASTERISK
+&mt LEFT_SHIFT UNDERSCORE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp LG(LS(NUMBER_4))      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
+&trans                     &kp KP_N0        &kp PERIOD       &kp EQUAL        &trans        &trans                    &trans  &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -232,10 +238,10 @@
 
         NUM_win_jp {
             bindings = <
-&kp SLASH          &kp N7        &kp N8        &kp N9         &kp DOUBLE_QUOTES                                     &kp JP_YEN        &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
-&kp SQT            &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp MINUS          &kp LANGUAGE_5           &kp PLUS  &kp JP_BACKQUOTE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SEMICOLON
-&kp JP_UNDERSCORE  &kp N1        &kp NUMBER_2  &kp NUMBER_3   &kp RS(COLON)      &kp LA(PRINTSCREEN)      &kp AT    &kp LS(N8)        &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AMPERSAND
-&trans             &kp N0        &kp PERIOD    &kp LS(MINUS)  &trans             &trans                   &trans    &trans                                                               &kp AT
+&kp SLASH         &kp N7        &kp N8        &kp N9         &kp DOUBLE_QUOTES                                     &kp JP_YEN        &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH       &kp DOLLAR
+&kp SQT           &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp MINUS          &kp LANGUAGE_5           &kp PLUS  &kp JP_BACKQUOTE  &kp PERCENT      &kp EQUAL          &kp CARET      &kp SEMICOLON
+&mt LEFT_SHIFT A  &kp N1        &kp NUMBER_2  &kp NUMBER_3   &kp RS(COLON)      &kp LA(PRINTSCREEN)      &kp AT    &kp LS(N8)        &kp LS(N9)       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AMPERSAND
+&trans            &kp N0        &kp PERIOD    &kp LS(MINUS)  &trans             &trans                   &trans    &trans                                                               &kp AT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
