@@ -157,7 +157,7 @@
 &kp Q             &kp W             &kp E         &kp R                &kp T                                                 &kp Y        &kp U  &lt 11 I   &kp O    &kp P
 &kp A             &kp S             &kp D         &kp F                &kp G        &kp ESCAPE             &kp SEMICOLON     &kp H        &kp J  &kp K      &kp L    &mt RIGHT_ALT MINUS
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                &kp B        &kp LG(LS(N5))         &kp SINGLE_QUOTE  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LCMD LANGUAGE_2  &lt 3 SPACE  &lt 11 LANGUAGE_1      &kp BACKSPACE     &lt 4 ENTER                             &mt LCTRL DELETE
+&kp TAB           &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LCMD LANGUAGE_2  &lt 3 SPACE  &lt 11 LANGUAGE_1      &kp BACKSPACE     &lt 4 ENTER                             &lt 12 DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -275,6 +275,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &change_mac  &change_windows_en_private  &change_iPad  &chang_win_work  &change_windows_jp
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans       &to 0                       &tog 1        &trans           &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                  &bt BT_CLR
+            >;
+        };
+
+        BT {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                          &trans       &trans                      &trans        &trans           &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &change_mac  &change_windows_en_private  &change_iPad  &chang_win_work  &change_windows_jp
+&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &trans       &trans                      &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                                  &trans
             >;
         };
 
